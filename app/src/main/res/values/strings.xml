@@ -4,5 +4,43 @@
     <string name="app_name">Sunshine</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="action_refresh" translatable="false">Refresh</string>
+    <string name="action_showOnMap" translatable="false">Show on Map</string>
+    <string name="title_activity_detail">Details</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="action_share">Share</string>
+
+    <!-- Label for the location preference [CHAR LIMIT=30] -->
+    <string name="pref_location_label">Location</string>
+
+    <!-- Key name for storing location in SharedPreferences [CHAR LIMIT=NONE] -->
+    <string name="pref_location_key" translatable="false">location</string>
+
+    <!-- Default postal code for location preference [CHAR LIMIT=NONE] -->
+    <string name="pref_location_default" translatable="false">85001</string>
+
+
+    <!-- Key name for storing unit of measurement in SharedPreferences [CHAR LIMIT=NONE] -->
+    <string name="pref_unitOfMeasurement_key" translatable="false">unit</string>
+
+    <!-- Default unit type for unit of measurement preference [CHAR LIMIT=NONE] -->
+    <string name="pref_unitOfMeasurement_default" translatable="false">metric</string>
+
+    <string name="pref_units_metric" translatable="false">metric</string>
+    <string name="pref_units_imperial" translatable="false">imperial</string>
+
+    <string name="pref_units_label_metric">Metric</string>
+    <string name="pref_units_label_imperial">Imperial</string>
+
+    <string-array name="stringArray_unitOfMeasurement_entries">
+        <item>@string/pref_units_label_metric</item>
+        <item>@string/pref_units_label_imperial</item>
+    </string-array>
+
+    <string-array name="stringArray_unitOfMeasurement_entryValues">
+        <item>@string/pref_units_metric</item>
+        <item>@string/pref_units_imperial</item>
+    </string-array>
+
 
 </resources>
