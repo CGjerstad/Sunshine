@@ -108,7 +108,6 @@ public class DetailActivity extends ActionBarActivity {
         }
 
 
-
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
@@ -117,12 +116,15 @@ public class DetailActivity extends ActionBarActivity {
             View rootView = inflater.inflate(R.layout.fragment_detail, container, false);
 
             // The detail Activity called via intent.  Inspect the intent for forecast data.
-                        Intent intent = getActivity().getIntent();
-                        if (intent != null && intent.hasExtra(Intent.EXTRA_TEXT)) {
-                                mForecastStr = intent.getStringExtra(Intent.EXTRA_TEXT);
-                                ((TextView) rootView.findViewById(R.id.detail_text))
-                                                .setText(mForecastStr);
-                            }
+            Intent intent = getActivity().getIntent();
+            if (intent != null && intent.hasExtra(Intent.EXTRA_TEXT)) {
+                mForecastStr = intent.getStringExtra(Intent.EXTRA_TEXT);
+            }
+
+            if (null != mForecastStr) {
+                ((TextView) rootView.findViewById(R.id.detail_text))
+                        .setText(mForecastStr);
+            }
 
 
             return rootView;
